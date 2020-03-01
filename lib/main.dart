@@ -35,7 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
         body: Card(
             child: Column(
           children: <Widget>[
-            Image.asset('assets/burger.jpg'),
+            // Image.asset('assets/burger.jpg'),
             Text('Hamburguer')
           ],
         )));
