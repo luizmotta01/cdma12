@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 
 class Pair extends StatelessWidget {
-  Pair({this.text, this.imagePath});
-
-  final String text;
+  Pair({this.imagePath, this.text});
 
   final String imagePath;
+  final String text;
 
   @override
   Widget build(BuildContext context) {
