@@ -10,7 +10,13 @@ class Pair extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: Column(
-        children: <Widget>[Image.asset(imagePath), Text(text)],
+        children: <Widget>[
+          Image.asset(imagePath),
+          Text(
+            text,
+            style: TextStyle(fontSize: 26),
+          )
+        ],
       ),
     );
   }
