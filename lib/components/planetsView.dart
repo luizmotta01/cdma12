@@ -16,7 +16,8 @@ class PlanetsView extends StatelessWidget {
         itemCount: pairData.length,
         itemBuilder: (BuildContext context, int index) {
           var path = pairData[index].imagePath;
-          return Pair(imagePath: 'assets/$path', text: pairData[index].text);
+          return Pair(
+              imagePath: 'assets/images/$path', text: pairData[index].text);
         },
       ),
     );
