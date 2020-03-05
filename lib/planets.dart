@@ -16,16 +16,16 @@ class Planets extends StatefulWidget {
 class _PlanetsState extends State<Planets> {
   @override
   Widget build(BuildContext context) {
-    getData() => <PairData>[
-          PairData(imagePath: 'mercury.jpg', text: 'Mercury'),
-          PairData(imagePath: 'venus.jpg', text: 'Venus'),
-          PairData(imagePath: 'earth.jpg', text: 'Earth'),
-          PairData(imagePath: 'mars.jpg', text: 'Mars'),
-          PairData(imagePath: 'jupiter.jpg', text: 'Jupiter'),
-          PairData(imagePath: 'saturn.jpg', text: 'Saturn'),
-          PairData(imagePath: 'uranus.jpg', text: 'Uranus'),
-          PairData(imagePath: 'neptune.jpg', text: 'Neptune'),
-        ];
+    var _pairData = <PairData>[
+      PairData(imagePath: 'mercury.jpg', text: 'Mercury'),
+      PairData(imagePath: 'venus.jpg', text: 'Venus'),
+      PairData(imagePath: 'earth.jpg', text: 'Earth'),
+      PairData(imagePath: 'mars.jpg', text: 'Mars'),
+      PairData(imagePath: 'jupiter.jpg', text: 'Jupiter'),
+      PairData(imagePath: 'saturn.jpg', text: 'Saturn'),
+      PairData(imagePath: 'uranus.jpg', text: 'Uranus'),
+      PairData(imagePath: 'neptune.jpg', text: 'Neptune'),
+    ];
 
     return Scaffold(
         appBar: AppBar(
@@ -33,6 +33,6 @@ class _PlanetsState extends State<Planets> {
         ),
         body: Container(
             padding: const EdgeInsets.all(8),
-            child: PlanetsView(pairDataList: getData())));
+            child: PlanetsView(pairData: _pairData)));
   }
 }
